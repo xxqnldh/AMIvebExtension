@@ -1,0 +1,25 @@
+{
+  "name": "veb",
+  "displayName": "veb",
+  "description": "AMI Veb Extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "veb_001",
+      "aliases": ["veb_lang", "veb_001"],
+      "extensions": [".veb"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "veb_001",
+      "scopeName": "source.veb",
+      "path": "./syntaxes/veb_001.tmLanguage.json"
+    }]
+  }
+}

@@ -1,2 +1,22 @@
-# AMIvebExtension
-AMI Veb File Vscode Extension
+# veb 语言扩展
+
+这是 AMI Veb的 VS Code 语法高亮扩展。
+
+## 功能
+
+- 支持 `.veb` 文件的语法高亮
+- 支持 `#` 单行注释
+- 支持字符串高亮（任意位置的双引号内容）
+- 关键字高亮（如 project, Build, version 等）
+
+## 使用方法
+暂无
+
+## 已知问题
+暂无
+
+## 发布说明
+
+### 0.0.1
+
+- 初始版本，支持基本语法高亮和注释。

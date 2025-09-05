@@ -1,0 +1,47 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "veb_lang",
+	"patterns": [
+		{
+			"include": "#comments"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"comments": {
+			"patterns": [{
+				"name": "comment.line.number-sign.veb_001",
+				"match": "#.*$"
+			}]
+		},
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.veb_001",
+				"match": "\\b(project|Build|version|BuildAll|BuildLog|BuildDir|files|SourceControl|BoardFlavor|ProjectType|CleanCmd)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.veb_001",
+			"begin": "\"",
+			"end": "\"",
+			"beginCaptures": {
+				"0": { "name": "punctuation.definition.string.begin.veb_001" }
+			},
+			"endCaptures": {
+				"0": { "name": "punctuation.definition.string.end.veb_001" }
+			},
+			"patterns": [
+				{
+					"name": "constant.character.escape.veb_001",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.veb"
+}
